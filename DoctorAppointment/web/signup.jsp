@@ -76,7 +76,7 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
             <legend><i class="glyphicon glyphicon-globe"></i>Sign up!</legend>
-            <form action="createuser.do" method="post" class="form" role="form">
+            <form action="createuser.do"  method="post" class="form" role="form">
             <div class="row">
                 <div class="col-xs-6 col-md-6">
                     <input class="form-control" name="txtfname" placeholder="First Name" type="text"
