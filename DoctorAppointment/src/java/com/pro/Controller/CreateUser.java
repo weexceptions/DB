@@ -43,7 +43,7 @@ public class CreateUser extends HttpServlet {
         UserDAO userdao = new daoImpl();
         
       //  userdao.createUser(user);
-        if(!(userdao.createUser(user))){
+        if(userdao.createUser(user)){
                 System.out.println("User Record Successfully Inserted");
                 RequestDispatcher rd = request.getRequestDispatcher("userhome.jsp");
                 rd.forward(request, response);

@@ -31,8 +31,10 @@ public class daoImpl implements UserDAO{
             ps.setString(6, u.getAddress());
             ps.setString(7, u.getPhone());
             ps.execute();
-            System.out.println("Insert Done");
+            flag=true;
+            System.out.println("Insert Successfull");
         } catch (Exception e) {
+            flag=false;
             System.out.println("Insert Failed");
             System.out.println(e.getMessage());
             //Logger.getLogger(daoImpl.class.getName()).log(Level.SEVERE,null,e);
